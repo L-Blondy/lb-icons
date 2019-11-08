@@ -1,0 +1,187 @@
+[class*="burger-"],
+[class*="chevron-"] {
+  cursor: pointer;
+}
+
+[class*="burger-"] .container,
+[class*="chevron-"] .container {
+  height: inherit;
+  width: inherit;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+  color: inherit;
+  z-index: 1000;
+}
+
+[class*="burger-"] .container div,
+[class*="chevron-"] .container div {
+  height: 4px;
+  color: inherit;
+  background-color: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 300ms, top 300ms, left 300ms, -webkit-transform 300ms, -webkit-transform-origin 300ms;
+  transition: opacity 300ms, top 300ms, left 300ms, -webkit-transform 300ms, -webkit-transform-origin 300ms;
+  transition: transform 300ms, transform-origin 300ms, opacity 300ms, top 300ms, left 300ms;
+  transition: transform 300ms, transform-origin 300ms, opacity 300ms, top 300ms, left 300ms, -webkit-transform 300ms, -webkit-transform-origin 300ms;
+}
+
+/****************************
+*            BURGER-BURGER
+*****************************/
+.burger-burger .container div:nth-child(1) {
+  top: 0;
+}
+
+.burger-burger .container div:nth-child(2) {
+  position: initial;
+  width: 100%;
+  -ms-transform: translateY(-50%);
+}
+
+.burger-burger .container div:nth-child(3) {
+  top: 100%;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+
+/****************************
+*             BURGER-CROSS
+*****************************/
+.burger-cross .container div:nth-child(1) {
+  top: 50%;
+  -webkit-transform: translate(0, -50%) rotate(-135deg);
+          transform: translate(0, -50%) rotate(-135deg);
+}
+
+.burger-cross .container div:nth-child(2) {
+  opacity: 0;
+  -ms-transform: translateY(-50%);
+}
+
+.burger-cross .container div:nth-child(3) {
+  top: 50%;
+  -webkit-transform: translate(0, -50%) rotate(-45deg);
+          transform: translate(0, -50%) rotate(-45deg);
+}
+
+/****************************
+*             CHEVRON-DOWN
+*****************************/
+.chevron-down .container div {
+  top: 70%;
+  left: 20%;
+  right: 20%;
+}
+
+.chevron-down .container div:nth-child(1) {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: translate(-50%, 0) rotate(40deg);
+          transform: translate(-50%, 0) rotate(40deg);
+}
+
+.chevron-down .container div:nth-child(2) {
+  opacity: 0;
+}
+
+.chevron-down .container div:nth-child(3) {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: translate(50%, 0) rotate(-40deg);
+          transform: translate(50%, 0) rotate(-40deg);
+}
+
+/****************************
+*             CHEVRON-UP
+*****************************/
+.chevron-up .container div {
+  top: 30%;
+  left: 20%;
+  right: 20%;
+}
+
+.chevron-up .container div:nth-child(1) {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: translate(-50%, -50%) rotate(-40deg);
+          transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+.chevron-up .container div:nth-child(2) {
+  opacity: 0;
+}
+
+.chevron-up .container div:nth-child(3) {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: translate(50%, -50%) rotate(40deg);
+          transform: translate(50%, -50%) rotate(40deg);
+}
+
+/****************************
+*             CHEVRON-LEFT
+*****************************/
+.chevron-left .container div {
+  height: auto;
+  width: 4px;
+  top: 20%;
+  bottom: 20%;
+  left: 30%;
+}
+
+.chevron-left .container div:nth-child(1) {
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: translate(-50%, -50%) rotate(40deg);
+          transform: translate(-50%, -50%) rotate(40deg);
+}
+
+.chevron-left .container div:nth-child(2) {
+  opacity: 0;
+}
+
+.chevron-left .container div:nth-child(3) {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: translate(-50%, 50%) rotate(-40deg);
+          transform: translate(-50%, 50%) rotate(-40deg);
+}
+
+/****************************
+*             CHEVRON-RIGHT
+*****************************/
+.chevron-right .container div {
+  height: auto;
+  width: 4px;
+  top: 20%;
+  bottom: 20%;
+  left: 70%;
+}
+
+.chevron-right .container div:nth-child(1) {
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+  -webkit-transform: translate(0, -50%) rotate(-40deg);
+          transform: translate(0, -50%) rotate(-40deg);
+}
+
+.chevron-right .container div:nth-child(2) {
+  opacity: 0;
+}
+
+.chevron-right .container div:nth-child(3) {
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: translate(0, 50%) rotate(40deg);
+          transform: translate(0, 50%) rotate(40deg);
+}
