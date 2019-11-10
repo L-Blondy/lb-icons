@@ -1,11 +1,11 @@
 {
 	"name": "lb-icons",
-	"version": "1.0.19",
+	"version": "1.0.26",
 	"description": "Interactive icons",
-	"main": "dist/index.js",
+	"main": "dist/bundle.js",
 	"scripts": {
-		"start": "parcel src/index.js",
-		"build": "parcel build src/index.js",
+		"start": "parcel test/index.html",
+		"build": "npx babel src/index.js --out-file dist/bundle.js && uglifyjs dist/bundle.js --output dist/bundle.js && parcel build src/styles.css",
 		"go": "npm run build && npm publish",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -13,11 +13,12 @@
 	"author": "Laurent Blondy",
 	"license": "ISC",
 	"devDependencies": {
-		"parcel-bundler": "^1.12.4",
 		"@babel/cli": "^7.7.0",
 		"@babel/core": "^7.7.2",
 		"@babel/preset-env": "^7.7.1",
-		"cssnano": "^4.1.10"
+		"cssnano": "^4.1.10",
+		"parcel-bundler": "^1.12.4",
+		"uglify-js": "^3.6.8"
 	},
 	"files": [
 		"dist/*"

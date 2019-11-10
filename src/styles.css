@@ -45,7 +45,6 @@
 .burger-burger .container div:nth-child(2) {
   position: initial;
   width: 100%;
-  -ms-transform: translateY(-50%);
 }
 
 .burger-burger .container div:nth-child(3) {
@@ -65,7 +64,6 @@
 
 .burger-cross .container div:nth-child(2) {
   opacity: 0;
-  -ms-transform: translateY(-50%);
 }
 
 .burger-cross .container div:nth-child(3) {

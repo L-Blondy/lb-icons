@@ -1,4 +1,4 @@
-import "./styles.css";
+import "lb-icons/dist/styles.css";
 
 const burgers = Array.prototype.slice.call( document.querySelectorAll( "[class*=burger-]" ) );
 const chevrons = Array.prototype.slice.call( document.querySelectorAll( "[class*=chevron-]" ) );

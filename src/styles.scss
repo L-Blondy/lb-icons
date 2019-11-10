@@ -1,161 +1,159 @@
 [class*="burger-"],
 [class*="chevron-"] {
-     cursor: pointer;
+	cursor: pointer;
 }
 
 [class*="burger-"] .container,
 [class*="chevron-"] .container {
-     height: inherit;
-     width: inherit;
-     position: relative;
-     display: flex;
-     align-items: center;
-     pointer-events: none;
-     color: inherit;
-     z-index: 1000;
+	height: inherit;
+	width: inherit;
+	position: relative;
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+	color: inherit;
+	z-index: 1000;
 }
 
 [class*="burger-"] .container div,
 [class*="chevron-"] .container div {
-     height: 4px;
-     color: inherit;
-     background-color: currentColor;
-     position: absolute;
-     top: 50%;
-     left: 0;
-     right: 0;
-     pointer-events: none;
-     transition: transform 300ms, transform-origin 300ms, opacity 300ms, top 300ms, left 300ms;
+	height: 4px;
+	color: inherit;
+	background-color: currentColor;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	pointer-events: none;
+	transition: transform 300ms, transform-origin 300ms, opacity 300ms, top 300ms, left 300ms;
 }
 
 /****************************
 *            BURGER-BURGER
 *****************************/
 .burger-burger .container div:nth-child(1) {
-     top: 0;
+	top: 0;
 }
 
 .burger-burger .container div:nth-child(2) {
-     position: initial;
-     width: 100%;
-     -ms-transform: translateY(-50%);
+	position: initial;
+	width: 100%;
 }
 
 .burger-burger .container div:nth-child(3) {
-     top: 100%;
-     transform: translate(0, -100%);
+	top: 100%;
+	transform: translate(0, -100%);
 }
 
 /****************************
 *             BURGER-CROSS
 *****************************/
 .burger-cross .container div:nth-child(1) {
-     top: 50%;
-     transform: translate(0, -50%) rotate(-135deg);
+	top: 50%;
+	transform: translate(0, -50%) rotate(-135deg);
 }
 
 .burger-cross .container div:nth-child(2) {
-     opacity: 0;
-     -ms-transform: translateY(-50%);
+	opacity: 0;
 }
 
 .burger-cross .container div:nth-child(3) {
-     top: 50%;
-     transform: translate(0, -50%) rotate(-45deg);
+	top: 50%;
+	transform: translate(0, -50%) rotate(-45deg);
 }
 
 /****************************
 *             CHEVRON-DOWN
 *****************************/
 .chevron-down .container div {
-     top: 70%;
-     left: 20%;
-     right: 20%;
+	top: 70%;
+	left: 20%;
+	right: 20%;
 }
 
 .chevron-down .container div:nth-child(1) {
-     transform-origin: bottom right;
-     transform: translate(-50%, 0) rotate(40deg);
+	transform-origin: bottom right;
+	transform: translate(-50%, 0) rotate(40deg);
 }
 
 .chevron-down .container div:nth-child(2) {
-     opacity: 0;
+	opacity: 0;
 }
 
 .chevron-down .container div:nth-child(3) {
-     transform-origin: bottom left;
-     transform: translate(50%, 0) rotate(-40deg);
+	transform-origin: bottom left;
+	transform: translate(50%, 0) rotate(-40deg);
 }
 
 /****************************
 *             CHEVRON-UP
 *****************************/
 .chevron-up .container div {
-     top: 30%;
-     left: 20%;
-     right: 20%;
+	top: 30%;
+	left: 20%;
+	right: 20%;
 }
 
 .chevron-up .container div:nth-child(1) {
-     transform-origin: top right;
-     transform: translate(-50%, -50%) rotate(-40deg);
+	transform-origin: top right;
+	transform: translate(-50%, -50%) rotate(-40deg);
 }
 
 .chevron-up .container div:nth-child(2) {
-     opacity: 0;
+	opacity: 0;
 }
 
 .chevron-up .container div:nth-child(3) {
-     transform-origin: top left;
-     transform: translate(50%, -50%) rotate(40deg);
+	transform-origin: top left;
+	transform: translate(50%, -50%) rotate(40deg);
 }
 
 /****************************
 *             CHEVRON-LEFT
 *****************************/
 .chevron-left .container div {
-     height: auto;
-     width: 4px;
-     top: 20%;
-     bottom: 20%;
-     left: 30%;
+	height: auto;
+	width: 4px;
+	top: 20%;
+	bottom: 20%;
+	left: 30%;
 }
 
 .chevron-left .container div:nth-child(1) {
-     transform-origin: left bottom;
-     transform: translate(-50%, -50%) rotate(40deg);
+	transform-origin: left bottom;
+	transform: translate(-50%, -50%) rotate(40deg);
 }
 
 .chevron-left .container div:nth-child(2) {
-     opacity: 0;
+	opacity: 0;
 }
 
 .chevron-left .container div:nth-child(3) {
-     transform-origin: left top;
-     transform: translate(-50%, 50%) rotate(-40deg);
+	transform-origin: left top;
+	transform: translate(-50%, 50%) rotate(-40deg);
 }
 
 /****************************
 *             CHEVRON-RIGHT
 *****************************/
 .chevron-right .container div {
-     height: auto;
-     width: 4px;
-     top: 20%;
-     bottom: 20%;
-     left: 70%;
+	height: auto;
+	width: 4px;
+	top: 20%;
+	bottom: 20%;
+	left: 70%;
 }
 
 .chevron-right .container div:nth-child(1) {
-     transform-origin: right bottom;
-     transform: translate(0, -50%) rotate(-40deg);
+	transform-origin: right bottom;
+	transform: translate(0, -50%) rotate(-40deg);
 }
 
 .chevron-right .container div:nth-child(2) {
-     opacity: 0;
+	opacity: 0;
 }
 
 .chevron-right .container div:nth-child(3) {
-     transform-origin: right top;
-     transform: translate(0, 50%) rotate(40deg);
+	transform-origin: right top;
+	transform: translate(0, 50%) rotate(40deg);
 }
