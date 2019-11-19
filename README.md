@@ -1,5 +1,11 @@
 # lb-icons
 
+## Available classes
+
+- burger-burger / burger-cross
+- chevron-left / chevron-right
+- chevron-up / chevron-down
+
 ## Usage
 
 > npm install --save-dev lb-icons
@@ -23,5 +29,5 @@
 ```
 
 ## Note
-Just don't use the `transition-duration` property.
+Just don't use the `transition-duration` property. <br/>
 Use instead the one liner `transition: opacity 100ms;`

@@ -6,7 +6,7 @@ const icons = burgers.concat( chevrons );
 
 for ( let i = 0; i < icons.length; i++ ) {
 	const container = document.createElement( "DIV" );
-	container.className = "container";
+	container.className = "lb-container";
 	icons[ i ].appendChild( container )
 
 	container.appendChild( document.createElement( "DIV" ) );
