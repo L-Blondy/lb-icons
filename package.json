@@ -1,6 +1,6 @@
 {
 	"name": "lb-icons",
-	"version": "1.0.31",
+	"version": "1.0.32",
 	"description": "Interactive icons",
 	"main": "dist/bundle.js",
 	"scripts": {
