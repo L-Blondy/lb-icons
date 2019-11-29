@@ -20,7 +20,7 @@ for ( let i = 0; i < icons.length; i++ ) {
 	}
 	if ( icons[ i ].getAttribute( "thickness" ) ) {
 		for ( let j = 0; j < icons[ i ].firstChild.children.length; j++ ) {
-			if ( icons[ i ].classList.contains( "chevron-left" ) )
+			if ( icons[ i ].classList.contains( "chevron-left" ) || icons[ i ].classList.contains( "chevron-right" ) )
 				icons[ i ].firstChild.children[ j ].style.width = icons[ i ].getAttribute( "thickness" );
 			else
 				icons[ i ].firstChild.children[ j ].style.height = icons[ i ].getAttribute( "thickness" );
